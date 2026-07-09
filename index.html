@@ -1,1 +1,122 @@
+<html lang="pt-br">
 
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>blog</title>
+
+
+
+
+
+
+
+
+   <style>
+      header {
+         background-color: #2465AB;
+         color: aliceblue;
+         text-align: center;
+         max-width: 800px;
+         margin: 0 auto;
+         padding: 16px;
+         border: 5px solid #8fccdf;
+
+
+      }
+
+
+
+
+      main {
+         background-color: rgb(255, 255, 255);
+         color: #2465AB;
+         text-align: left;
+         margin: 0 auto;
+         padding: 16px;
+         margin: 0 auto;
+         padding: 16px;
+         display: flex;
+
+
+      }
+
+      img {
+         width: 80px;
+         height: 80px;
+      }
+
+      .artigo-autor {
+         font-weight: bold;
+      }
+   </style>
+
+
+
+
+</head>
+
+
+
+
+<body>
+
+
+
+   <header>
+      <h1>Meu blog Mundo da Copa</h1>
+      <p>Vou compartilhar conhecimentos sobre a Copa do Mundo de 2026
+      <header>
+
+         <main>
+            
+            <img src="alura-mundo.dac.opa.jpg"
+               alt="A imagem celebra a Copa do Mundo de 2026 com uma ilustração vibrante de um jogador comemorando um gol, cercada pelas bandeiras e pela torcida dos países sedes: Estados Unidos, México e Canadá.">
+            <div>
+               <h2>Meu primeiro post</h2>
+               <p class="artigo-autor">Por: Izabela Alves</p>
+               <p>Bem-vindo ao Mundo da Copa! ⚽
+                  Seu ponto de encontro para tudo sobre a Copa do Mundo: notícias, curiosidades, gols e emoção em cada
+                  partida. Entre, torça e viva a Copa com a gente!</p>
+               <button>❤️ <span>0</span> </button>
+               <button>🔥 <span>0</span> </button>
+
+               
+               <div>
+                  <h2>Meu segundo post</h2>
+                  <p class="artigo-autor">Por: Izabela Alves</p>
+                  <p>Copa do Mundo de 2026: a maior edição da história do futebol!🏆⚽
+                     A Copa do Mundo de 2026 promete marcar uma nova era no futebol. Pela primeira vez, o torneio contará com 48 seleções, aumentando as chances de mais países disputarem o título mundial. Além disso, a competição será realizada em três países: Estados Unidos, Canadá e México, algo inédito na história da Copa. Com mais estádios, mais partidas e milhões de torcedores acompanhando cada lance, a expectativa é que esta seja a maior e mais emocionante edição já realizada. Para os amantes do futebol, a Copa de 2026 representa muito mais do que um campeonato: é uma celebração mundial do esporte.</p>
+                  <button>💯 <span>0</span> </button>
+                  <button>🤩 <span>0</span> </button>
+
+
+
+               </div>
+
+               <main>
+
+</body>
+<script>
+   const botoes = document.querySelectorAll("button");
+
+   botoes.forEach(function (botao) {
+      let curtiu = false;
+      botao.addEventListener("click", botaoClicado);
+     function botaoClicado() {
+    console.log("fui clicado");
+    let texto = botao.querySelector("span");
+    if (curtiu === false){
+        texto.textContent++;
+        curtiu = true;
+    } else {
+        texto.textContent--;
+        curtiu = false;
+    }
+}
+   });
+
+
+</script>
+
+</html>
